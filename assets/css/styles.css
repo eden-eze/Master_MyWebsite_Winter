@@ -1,33 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Barlow|Fjalla+One|Karla|Maven+Pro|Poiret+One|Raleway&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-
 }
 
 body {
     background-color: #FFFFFF;
     color: #7C7c7c;
-    font-family: sans-serif;
-    font-size: 16px
+    font-family: 'Abel', sans-serif;
+    font-size: 18px
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: cornsilk;
+    font-feature-settings: normal;
+    margin-bottom: 10px 0 20px 0;
+    font-size: 38px;
+    backface-visibility: visible;
+    background-color: transparent;
+    position: relative;
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: 'Abel', sans-serif;
+    color: antiquewhite;
+    font-feature-settings: normal;
+    font-size: 28px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+    font-family: 'Karla', sans-serif;
+}
+
+h5 {
+    font-family: 'Barlow', sans-serif;
+}
+
 h6 {
-    font-family: sans-serif;
-    margin: 10px 0 20px auto;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.logo: hover {
+    background-blend-mode: screen;
 
 
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 23px;
     margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    padding: 2px;
 
 }
 
@@ -44,31 +93,24 @@ ul li {
 }
 
 ul li a {
-    text-decoration: none color: #fff;
+    text-decoration: #c46a15: #c46a15;
     padding: 1px 10px;
     border: 1px solid #fff;
     transition: 0.6s ease;
+    background-blend-mode: screen;
+
 
 }
 
 ul li a:hover {
     background-color: #fff;
-    color: #000
+    color: #c46a15
 }
 
-h1 {
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
 
-.wrapper {
-    width: 980px;
-    margin: 0 auto;
-}
 
 header {
-    background-image: url(../images/black%20and%20white_1.jpg);
+    background-image: url(../images/john.jovic.3.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -86,7 +128,7 @@ nav {
 main {
     background-color: #C46a15;
     color: #DBC7Af;
-    padding: 20px;
+    padding: 40px;
 
 }
 

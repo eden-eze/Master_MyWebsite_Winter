@@ -1,6 +1,80 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Barlow|Fjalla+One|Karla|Maven+Pro|Poiret+One|Raleway&display=swap');
 
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #7c7c7c;
+}
 
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url(../images/john.jovic.4.jpg);
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url(../images/boyd_1.jpg);
+    min-height: 100%;
+}
+
+.pimg3 {
+    background-image: url(../images/churchill%20house_sketch1.jpg);
+    min-height: 100%;
+}
+
+.pimg4 {
+    background-image: url(../images/john.jovic.5.jpg);
+    min-height: 100%;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #ffffff;
+    color: #C46A15;
+}
+
+.section-color {
+    background-color: #C46A15;
+    color: antiquewhite;
+}
+
+.section-dark {
+    background-color: #7c7c7c;
+    color: #dbc7af
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+/* first draft */
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +85,12 @@ body {
     background-color: #FFFFFF;
     color: #7C7c7c;
     font-family: 'Abel', sans-serif;
-    font-size: 18px
+    font-size: 18px;
+    line-height: 30px;
+
 }
+
+/* typography */
 
 h1 {
     font-family: 'Fjalla One', sans-serif;
@@ -51,54 +129,72 @@ h6 {
     font-family: 'Maven Pro', sans-serif;
     font-size: 10px;
     padding-bottom: 10px;
-
-
 }
-
 
 .logo {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 73%;
+    left: 40%;
     transform: translate(-50%, -50%);
-
-
 }
 
-.logo: hover {
-    background-blend-mode: screen;
 
 
+/* text containers */
+
+.text-container-1 {
+    padding: 10px;
 }
 
 p {
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     margin-bottom: 30px;
     font-family: 'Raleway', sans-serif;
     padding: 2px;
+}
+
+/* anchor styles */
+
+a {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
 
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {}
+
+
 ul {
     float: right;
-    list-style-type: square;
+    list-style-type: none;
     margin-top: 5px;
 
 }
 
 ul li {
-    display: inline-block;
+    display: contents;
 
 }
 
 ul li a {
-    text-decoration: #c46a15: #c46a15;
+    text-decoration: #c46a15;
     padding: 1px 10px;
-    border: 1px solid #fff;
+    border: none;
     transition: 0.6s ease;
     background-blend-mode: screen;
-
+    text-transform: uppercase;
 
 }
 
@@ -108,31 +204,56 @@ ul li a:hover {
 }
 
 
-
 header {
     background-image: url(../images/john.jovic.3.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
-
-
 }
 
 
 nav {
-    background-color: #FFFFFF;
     color: #7c7c7c;
+}
 
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+nav ul li a.currentpage {
+    text-decoration: #c46a15;
+    padding: 1px 10px;
+    border: none;
+    transition: 0.6s ease;
+    background-blend-mode: screen;
+    text-transform: uppercase;
 }
 
 main {
     background-color: #C46a15;
     color: #DBC7Af;
-    padding: 40px;
+    padding: 30px;
+    overflow: auto;
+}
+
+.left-img {
+    height: 90vh;
+    width: 90vh;
+    background-position: left;
+    padding: 10px;
+    border: 2px #DBDBDB;
 
 }
 
 footer {
     background-color: #dbdbdb;
     color: #c46a15;
+    padding: 20px;
+    border-top: 1px solid #9C9A9A;
+
+}
+
+footer p {
+    font-size: 80%;
+    color: #555454;
 }
